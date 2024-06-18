@@ -2,6 +2,7 @@ import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
+import { FaLocationArrow } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -36,7 +37,7 @@ const Hero = () => {
           </h2>
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transforming Concepts into Sameless Experience"
+            words="Transforming Concepts into Sameless User Experience"
           />
           <p
             className="text-cernter md:tracking-wider *:first-letter:mb-4
@@ -46,7 +47,11 @@ const Hero = () => {
             Hi, I&apos;m Malay, a App Developer
           </p>
           <a href="#about">
-            <MagicButton title="show my work" icon={undefined} position={""} />
+            <MagicButton
+              title="show my work"
+              icon={<FaLocationArrow />}
+              position={"right"}
+            />
           </a>
         </div>
       </div>
